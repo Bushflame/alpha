@@ -1,0 +1,13 @@
+<!-- only unique code here -->
+{% extends "layout.html" %}
+{% block content %}
+    <div class="main-wrapper">
+            {% for post in posts %}
+                <div class="blog-item">
+                    <p><span class="blog-item__author">{{post.author}}</span> on <span class="date">{{post.date_posted}}</span></p>
+                    <h1 class='blog-item__title'>{{post.title}}</h1>
+                    <p class='blog-item__post'>{{post.content}}</p>
+                </div>
+            {% endfor %}
+      </div>
+{% endblock %}

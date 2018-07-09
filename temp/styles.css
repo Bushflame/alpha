@@ -28,6 +28,9 @@ p {
   padding:1rem;
   width:100%;
 }
+.form__input-invalid {
+  border: red;
+}
 .form__btn {
   border:1px solid skyblue;
   background: #fff;

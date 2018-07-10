@@ -1,3 +1,7 @@
+
+* {
+  box-sizing:border-box;
+}
 p {
   font-size: 1.1rem;
   line-height: 150%;
@@ -12,32 +16,37 @@ p {
   max-width:680px;
   margin:4rem auto;
 }
+.form {
+  color: rgb(120,120,120)
+}
 .form__title {
   color:skyblue;
   font-size:2.5rem;
-  margin:1rem;
+  line-height: 1;
+  margin: 0;
   text-align:center;
 }
 .form__set {
   width:100%;
-  margin:auto;
+  margin:0.5rem auto;
 }
 .form__input{
   color:grey;
   border:solid 1px rgba(230,230,230,1);
-  padding:1rem;
+  padding:.5rem;
   width:100%;
 }
 .form__input-invalid {
-  border: red;
+  border:1px solid red;
 }
 .form__btn {
   border:1px solid skyblue;
+  border-radius: .25rem;
   background: #fff;
   color: skyblue;
-  font-size:2rem;
+  font-size:1.4rem;
   padding:.5rem 1rem;
-  margin-top:2rem;
+  margin-top:1rem;
   text-align:center;
   width:10rem;
 }
@@ -46,7 +55,13 @@ p {
   background: skyblue;
   color: #fff;
 }
-
+.form__footer{
+  border-top:1px solid skyblue;
+  margin-top: 1rem;
+}
+.form__footer-a{
+  margin-left: 2rem;
+}
 .articles {
   background: rgba(240,240,240, 1);
   max-width:880px;
